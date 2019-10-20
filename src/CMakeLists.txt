@@ -1,0 +1,15 @@
+if(WIN32)
+    set(SOURCES 
+        ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/Host.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}/Player.cpp
+        PARENT_SCOPE
+    )
+else()
+    set(SOURCES 
+        ${CMAKE_CURRENT_SOURCE_DIR}\main.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}\Host.cpp
+        ${CMAKE_CURRENT_SOURCE_DIR}\Player.cpp
+        PARENT_SCOPE
+    )
+endif()
